@@ -1,0 +1,34 @@
+
+<!-- bg-white: Fondo blanco en modo normal, dark:bg gray si el sitio esta en modo oscuro -->
+<section class="bg-white dark:bg-gray-900">
+<!-- Espacia, Centra, Agrega padding py-8 px-4, Limita el ancho maximo, es un contenedor que organiza el contenido en 2 columnas centradas y espaciadas en pantallas grandes-->
+ <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+    <!-- font-light text-gray-500 sm:text-lg dark:text-gray-400 → texto en gris claro, delgado, que se adapta en tamaño (más grande en pantallas pequeñas en adelante) y cambia de color en modo oscuro, en h2 título destacado (muy grande, negrita extra, adaptable a modo oscuro), y p párrafos descriptivos con separación (mb-4) -->
+    <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white animate-pulse">About me</h2>
+            <p id="img-left" class="mb-4 opacity-0">I am a person who is proud of who I am, but also eager to keep learning and growing in life. I consider myself patient and always face problems with a smile, looking for the best solution without losing my composure.
+            I have worked in a computer warehouse, where I gained valuable skills in inventory management and teamwork. In addition, I have a strong passion for programming, especially in Java, where I developed a time routine program that helps me organize my daily activities efficiently.
+            My main hobbies are programming, drawing, and video editing—activities I enjoy because they allow me to continue developing my skills. I always try to encourage those around me, regardless of their age. Empty criticism does not affect me, since what I truly value are the pieces of advice that help me improve and move toward a better version of myself.</p>
+            <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
+     </div>
+
+
+        <!-- Este div divide el grid en 2 columnas iguales, con gap le damo un espaciado, y mt agrega un margin-top de 32px-->
+        <div class="grid grid-cols-2 gap-4 mt-8">
+
+            <!-- Contenedor para el texto-->
+            <div class="text-center">
+            <h2 id="img-down" class="text-[64px] font-code text-indigo-600 mb-4 opacity-0">CODING</h2>
+            <img id="img-left" class="w-full rounded-lg opacity-0" src="https://images.stockcake.com/public/e/e/6/ee6071b7-ef42-45e4-ba8c-9fc44bbdfa22_large/coding-at-night-stockcake.jpghttps://images.stockcake.com/public/e/e/6/ee6071b7-ef42-45e4-ba8c-9fc44bbdfa22_large/coding-at-night-stockcake.jpg" alt="office content 1">
+            </div>
+
+            <div class="text-center"> 
+            <img id="img-right" class="mt-4 w-full lg:mt-10 rounded-lg opacity-0" src="png2.jpg" alt="office content 2">
+            <h2 id="img-top" class="text-[64px] font-urbanjungle text-gray-800 mb-4 opacity-0">PHOTO</h2>
+            </div>
+        </div>
+ </div>
+</section>
+
+
+

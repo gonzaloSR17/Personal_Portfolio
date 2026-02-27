@@ -1,0 +1,98 @@
+<section class="relative min-h-screen w-full flex flex-col items-center text-center text-white overflow-hidden">
+
+  <!-- Fondo -->
+  <app-ball-tracker class="absolute inset-0 z-0"></app-ball-tracker>
+
+  <!-- Header -->
+  <div class="relative z-10 w-full max-w-6xl mx-auto mt-10 px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      
+      <div class="bg-blue-600 py-2 px-6 rounded-xl">
+        <p class="font-semibold">Mis Proyectos Personales</p>
+      </div>
+
+      <div class="bg-green-600 py-2 px-6 rounded-xl">
+        <p class="font-semibold">({{ contadorPagina + 1 }}/5)</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Contenido Principal -->
+  <div class="relative z-10 w-full max-w-6xl mx-auto mt-10 px-6">
+
+    <h1 class="text-white text-4xl mb-3">{{ projectTitle[contadorPagina] }}</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+
+      <!-- Botón Izquierda -->
+      <div class="md:col-span-1 flex justify-center">
+        <button (click)="pasarPaginas(false)" 
+                class="text-6xl md:text-8xl font-bold hover:scale-110 transition">
+          &lt;
+        </button>
+      </div>
+
+      <!-- Información -->
+      <div class="md:col-span-5 space-y-4 text-left">
+
+        <p>{{ projectDescription1[contadorPagina] }}</p>
+
+        <ol class="list-decimal list-inside space-y-2 opacity-90">
+          <li><b>{{ projectDetails1[contadorPagina] }}</b></li>
+          <li>{{ projectDetails2[contadorPagina] }}</li>
+          <li>{{ projectDetails3[contadorPagina] }}</li>
+        </ol>
+
+        <p>{{ projectDescriptionFinal[contadorPagina] }}</p>
+      </div>
+
+      <!-- Carousel + Skills -->
+      <div class="md:col-span-5 flex flex-col items-center space-y-4">
+
+        <div id="carouselExampleIndicators"
+             class="carousel slide rounded-xl overflow-hidden w-full"
+             data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img [src]="pokemonrpgImg[contadorPagina][0]" class="w-full" alt="">
+            </div>
+            <div class="carousel-item">
+              <img [src]="pokemonrpgImg[contadorPagina][1]" class="w-full" alt="">
+            </div>
+            <div class="carousel-item">
+              <img [src]="pokemonrpgImg[contadorPagina][2]" class="w-full" alt="">
+            </div>
+            <div class="carousel-item">
+              <img [src]="pokemonrpgImg[contadorPagina][3]" class="w-full" alt="">
+            </div>
+            <div class="carousel-item">
+              <img [src]="pokemonrpgImg[contadorPagina][4]" class="w-full" alt="">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Skills -->
+        <div class="flex flex-wrap gap-2 justify-center">
+          <span *ngFor="let skills of skillsUse[contadorPagina]"
+                class="px-3 py-1 bg-gray-700 rounded-full text-sm">
+            {{ skills }}
+          </span>
+        </div>
+
+      </div>
+
+      <!-- Botón Derecha -->
+      <div class="md:col-span-1 flex justify-center">
+        <button (click)="pasarPaginas(true)" 
+                class="text-6xl md:text-8xl font-bold hover:scale-110 transition">
+          &gt;
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</section>

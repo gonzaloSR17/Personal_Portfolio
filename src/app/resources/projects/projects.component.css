@@ -1,0 +1,25 @@
+#contenedor {
+    display: flex; /* Avtiva el modelo Flexbox en el contenedor */
+    flex-direction: row; /* Organiza los elementos hijos en fila (de izquierda a derecha)*/
+    flex-wrap: wrap; /* Permite que los elementos "salten a otra fila si no caben"*/
+}
+
+#contenedor > div {
+  width: 50%; /* Dividir espacio si es despues de un div con el id contendor*/
+}
+
+
+#contenedor > .btnCar {
+    width: 10%;
+}
+
+#contenedor > .textInfo {
+    width: 40%;
+}
+
+.textInfo {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal; /* asegura que el texto haga salto de línea */
+}
+
