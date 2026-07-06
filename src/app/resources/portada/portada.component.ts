@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 
+import { BallTrackerComponent } from '../ball-tracker/ball-tracker.component';
+
 @Component({
   selector: 'app-portada',
   standalone: true,
-  imports: [],
+  imports: [BallTrackerComponent],
   templateUrl: './portada.component.html',
   styleUrl: './portada.component.css'
 })

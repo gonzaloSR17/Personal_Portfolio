@@ -1,60 +1,47 @@
 
 <!-- forked from: https://codepen.io/cuonoj/pen/JjPmMaB -->
-<section class="relative h-screen flex flex-col items-center justify-center text-center text-white ">
-    <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+<section class="relative h-[100dvh] overflow-hidden flex flex-col items-center justify-center text-white">
+   <!-- Fondo -->
+  <app-ball-tracker class="absolute inset-0 z-0"></app-ball-tracker>
+    <!-- <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
        <video class="min-w-full min-h-full absolute object-cover"
             [src]="imagenDecidida"
             type="video/mp4" autoplay muted loop></video>
-    </div>
+    </div> -->
     <div class="video-content space-y-2 z-10">
-        <div class="relative w-[950px]">
-            <img src="/TarejaGonzalo.jpg" alt="Tarjeta Gonzalo"  class="w-full rounded-xl opacity-80">
-            <img src="/pfp.png" alt="fotoPerfil" class="absolute bottom-4 right-4 w-60 h-65 rounded-full border-4 border-white shadow-lg">     
-            <!-- 
-                     absolute bottom-4 right-4 coloca la imagen en la esquina inferior derecha 
-         w-20 h-20                   define ancho y alto (80px x 80px aprox)
-         rounded-full                convierte la imagen en un círculo
-         border-4 border-white       le agrega un borde blanco de 4px 
-         shadow-lg                   le añade una sombra para destacarla 
-            -->
+      <!-- Contenedor visual -->
+       <div class="relative max-w-[950px] rounded-xl overflow-hidden glass-card">
+          <img src="/TarejaGonzalo.jpg" alt="Tarjeta Gonzalo"  class="rounded-xl opacity-80">
+          <img src="/pfp.png" alt="fotoPerfil" class="absolute bottom-4 right-4 border-4 w-24 sm:w-32 md:w-40 lg:w-48 rounded-full border-white">
+          
+          <!-- Contenedor para textos-->
+           <div class="absolute top-4 left-4 p-2">
+              <h1 class="lg:text-[42px] md:text-[30px] sm:text-[20px] text-[20px]
+              font-black drop-shadow-[2px_2px_4px_rgba(0,0,0,0.7)] animate-fade-in-scale">
+              Gonzalo Sánchez-Ros Paz</h1> 
 
-     <!-- Contenedor de nombre + subtítulo -->
-      <div class="absolute top-4 left-4 text-left"> <!-- Ponemos el texto a la izquierda-->
-         <p class="font-black text-[80px] text-white drop-shadow-[2px_2px_4px_rgba(0,0,0,0.7)] animate-fade-in-scale">
-         Gonzalo Sánchez-Ros Paz
-  </p>
+              <h4 class="lg:text-[20px] md:text-[18px] sm:text-[14px] text-[14px]
+              font-black mt-2 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.7)] animate-fade-in-scale">
+              Java Developer | Educational Game Programmer | IT Technician
+           </h4>
+           </div>
 
-   <p class="mt-6 font-black text-[15px] text-white drop-shadow-[2px_2px_4px_rgba(0,0,0,0.7)] animate-fade-in-scale">
-    Java Developer | Educational Game Programmer | IT Technician
-  </p>
-  
-      </div>
+           <!-- Contenedor para redes sociales-->
 
-      <div class="absolute bottom-1 left-1 flex gap-4">
-        <a href="https://www.instagram.com" target="_blank">
-        <img src="/instalogo.png" class="w-28 h-28 rounded-full border-4 border-white shadow-lg" alt="logo instagram"> </a>
-        <a href="https://www.whatsapp.com" target="_blank">
-        <img src="/logowhatsapp.png" class="w-28 h-28 rounded-full border-4 border-white shadow-lg" alt="logo whatsapp"> </a>
-        <a href="https://www.linkdln.com" target="_blank">
-        <img src="/logold.png" class="w-28 h-28 rounded-full border-4 border-white shadow-lg" alt="logo likedln"> </a>
-        <a href="https://www.github.com" target="_blank">
-        <img src="/gitlogo.png" class="w-28 h-28 rounded-full border-4 border-white shadow-lg object-contain" alt="logo github"> </a>
+           <div class="absolute bottom-1 left-1 flex gap-4 p-3">
+            <a href="https://www.instagram.com" target="_blank">
+            <img src="/instalogo.png" class="w-12 sm:w-18 md:w-22 lg:w-24 rounded-full border-4 border-white shadow-lg" alt="logo instagram"> </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+            <img src="/logowhatsapp.png" class="w-12 sm:w-18 md:w-22 lg:w-24 rounded-full border-4 border-white shadow-lg" alt="logo whatsapp"> </a>
+            <a href="https://www.linkedin.com/in/gonzalo-s%C3%A1nchez-ros-7275b2240/" target="_blank">
+            <img src="/logold.png" class="w-12 sm:w-18 md:w-22 lg:w-24 rounded-full border-4 border-white shadow-lg" alt="logo likedln"> </a>
+            <a href="https://github.com/gonzaloSR17" target="_blank">
+            <img src="/gitlogo.png" class="w-12 sm:w-18 md:w-22 lg:w-24 rounded-full border-4 border-white shadow-lg object-contain" alt="logo github"> </a>
+          </div>
 
-      </div>
-
-
-        </div>
-      
-      <!--<h1 class="font-light text-6xl">Gonzalo Sánchez-Ros Paz</h1>
-        <h3 class="font-light text-3xl">DESARROLLADOR JAVA | PROGRAMADOR DE
-        VIDEOJUEGOSEDUCATIVOS|TÉCNICO EN INFORMÁTICA</h3> -->
-        
+       </div>
     </div>
 </section>
-
-
-      
-
 
 
 <style>

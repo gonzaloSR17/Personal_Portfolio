@@ -23,7 +23,7 @@ export class BallTrackerComponent implements OnInit, OnDestroy {
 
   smallBalls: { x:number; y: number; vx: number; vy: number }[] = [];
   readonly smallRadius = 5;
-  readonly numSmallBalls = 500;
+  readonly numSmallBalls = 220;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     this.isBrowser = isPlatformBrowser(this.platformId);

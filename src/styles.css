@@ -101,4 +101,11 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'father-galaxy';
+    src: url(/fonts/FatherGalaxy-Regular.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 }

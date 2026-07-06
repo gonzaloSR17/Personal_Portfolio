@@ -1,0 +1,27 @@
+.glass-card {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari */
+
+    background: rgba(20, 20, 20, 0.35);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.45),
+        0 0 30px rgba(0,100,255,.20);
+
+    border-radius: 20px;
+}
+
+a img {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                filter 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,255,255,.8);
+    filter: brightness(1.15);
+}
